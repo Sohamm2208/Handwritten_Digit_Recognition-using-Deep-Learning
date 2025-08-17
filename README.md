@@ -1,5 +1,6 @@
 # Handwritten_Digit_Recognition-using-Deep-Learning
 We will use an ANN trained on MNIST dataset to recognize the hand-written digits 0-9 .
+Train Accuracy of Model is roughly 98% Test accuracy of Model is 91%.
 # Outline of Project
 ## 1. Packages/Library used-
    Numpy,Tensorflow,Matplotlib
