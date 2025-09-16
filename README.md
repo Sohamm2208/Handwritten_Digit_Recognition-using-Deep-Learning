@@ -30,7 +30,7 @@ Train Accuracy of Model is roughly 98% Test accuracy of Model is 91%.
    
 ## 6. Tensorflow Model Training
    We use Keras Sequential model and Dense Layer with a ReLU activation to construct the three layer network.We also use a dropout layer to avoid overfitting.
-   In order to improve numerical softmax is grouped with the loss function rather than the output layer during training. Therefore while model building we do the following:
+   In order to improve numerical  stability,softmax is grouped with the loss function rather than the output layer during training. Therefore while model building we do the following:
    In the final Dense layer we use a 'linear' activation. This is effectively no activation.
    The model.compile statement will indicate this by including from_logits=True.
    **loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True)**
